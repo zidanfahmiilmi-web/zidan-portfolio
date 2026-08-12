@@ -7,34 +7,58 @@ import Projects from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+// Komponen interaktif tambahan
+import CosmicBackground from "@/components/CosmicBackground";
+import AnimatedSection from "@/components/AnimatedSection";
 
-export default function Home(){
+export default function Home() {
+  return (
+    <main className="relative min-h-screen text-white">
+      {/* Background kosmik */}
+      <CosmicBackground />
 
-return(
+      {/* Navbar bergaya glass */}
+      <Navbar />
 
-<main>
+      {/* Bungkus setiap section dengan animasi scroll + glassmorphism */}
+      <AnimatedSection>
+        <section className="glass-card p-8">
+          <Hero />
+        </section>
+      </AnimatedSection>
 
+      <AnimatedSection>
+        <section className="glass-card p-8">
+          <About />
+        </section>
+      </AnimatedSection>
 
-<Navbar />
+      <AnimatedSection>
+        <section className="glass-card p-8">
+          <Experience />
+        </section>
+      </AnimatedSection>
 
-<Hero />
+      <AnimatedSection>
+        <section className="glass-card p-8">
+          <Skills />
+        </section>
+      </AnimatedSection>
 
-<About />
+      <AnimatedSection>
+        <section className="glass-card p-8">
+          <Projects />
+        </section>
+      </AnimatedSection>
 
-<Experience />
+      <AnimatedSection>
+        <section className="glass-card p-8">
+          <Contact />
+        </section>
+      </AnimatedSection>
 
-<Skills />
-
-<Projects />
-
-<Contact />
-
-<Footer />
-
-
-</main>
-
-
-)
-
+      {/* Footer bergaya glass */}
+      <Footer />
+    </main>
+  );
 }
