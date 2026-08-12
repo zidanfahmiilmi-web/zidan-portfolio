@@ -32,7 +32,7 @@ export default function Hero() {
             <h1
               className="
                 text-5xl md:text-7xl font-bold
-                bg-gradient-to-r from-blue-400 to-cyan-300
+                bg-linear-to-r from-blue-400 to-cyan-300
                 bg-clip-text text-transparent
               "
             >
