@@ -11,19 +11,19 @@ export default function Hero() {
     <AnimationWrapper>
       <section
         className="
-          min-h-screen flex items-center px-6
+          min-h-screen flex items-center px-4 md:px-6 py-12 md:py-24
           text-white glass-card
         "
       >
         <div
           className="
-            max-w-6xl mx-auto grid md:grid-cols-2
-            gap-10 items-center
+            max-w-6xl mx-auto grid gap-10
+            md:grid-cols-2 items-center
           "
         >
           {/* LEFT */}
           <div>
-            <p className="uppercase tracking-[6px] text-blue-400 mb-4">
+            <p className="uppercase tracking-[6px] text-blue-400 mb-4 text-sm md:text-base">
               {language === "en"
                 ? "Customer Experience Professional"
                 : "Profesional Customer Experience"}
@@ -31,7 +31,7 @@ export default function Hero() {
 
             <h1
               className="
-                text-5xl md:text-7xl font-bold
+                text-3xl md:text-7xl font-bold
                 bg-linear-to-r from-blue-400 to-cyan-300
                 bg-clip-text text-transparent
               "
@@ -39,13 +39,13 @@ export default function Hero() {
               Zidan Fahmi Ilmi
             </h1>
 
-            <h2 className="text-2xl md:text-3xl mt-5 text-slate-200">
+            <h2 className="text-lg md:text-3xl mt-5 text-slate-200">
               {language === "en"
                 ? "Customer Service | Customer Experience | Relationship Management"
                 : "Customer Service | Pengalaman Pelanggan | Manajemen Relasi"}
             </h2>
 
-            <p className="mt-6 max-w-xl text-slate-300 leading-relaxed">
+            <p className="mt-6 max-w-xl text-slate-300 leading-relaxed text-sm md:text-base">
               {language === "en"
                 ? `Professional with experience in customer service,
                    handling complaints, product education, and sales support.
@@ -57,12 +57,12 @@ export default function Hero() {
             </p>
 
             {/* BUTTONS */}
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col md:flex-row gap-4 mt-8">
               <a
                 href="/CV-Zidan-Fahmi-Ilmi.pdf"
                 download
                 className="
-                  px-7 py-3 rounded-xl
+                  w-full md:w-auto px-7 py-3 rounded-xl
                   bg-white/10 border border-white/20
                   backdrop-blur-md shadow-lg
                   text-white font-semibold
@@ -76,7 +76,7 @@ export default function Hero() {
               <a
                 href="#contact"
                 className="
-                  px-7 py-3 rounded-xl
+                  w-full md:w-auto px-7 py-3 rounded-xl
                   bg-white/10 border border-white/20
                   backdrop-blur-md shadow-lg
                   text-white font-semibold
@@ -91,7 +91,7 @@ export default function Hero() {
 
           {/* IMAGE */}
           <div className="flex justify-center">
-            <div className="relative w-72 h-72 md:w-96 md:h-96">
+            <div className="relative w-48 h-48 md:w-96 md:h-96">
               <Image
                 src="/profile.png"
                 alt="Zidan Fahmi Ilmi"

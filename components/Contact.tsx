@@ -10,44 +10,48 @@ export default function Contact() {
     <AnimationWrapper>
       <section
         id="contact"
-        className="
-          py-24 px-6 text-white glass-card
-        "
+        className="px-4 md:px-12 py-12 md:py-24 text-white glass-card"
       >
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-blue-400 uppercase tracking-[5px] text-sm">
+          <p className="text-blue-400 uppercase tracking-[5px] text-xs md:text-sm">
             Contact
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-4">
+          <h2 className="text-2xl md:text-5xl font-bold mt-4">
             {language === "en" ? "Let's Connect" : "Mari Terhubung"}
           </h2>
 
-          <p className="mt-6 text-slate-200 max-w-2xl mx-auto">
+          <p className="mt-6 text-slate-200 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             {language === "en"
               ? "I am open to new opportunities in Customer Service, Customer Experience, and Relationship Management. Feel free to contact me for career opportunities or collaboration."
               : "Saya terbuka untuk kesempatan baru di bidang Customer Service, Customer Experience, dan Relationship Management. Silakan hubungi saya untuk peluang kerja maupun kolaborasi."}
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             {/* EMAIL */}
-            <div className="glass-card p-6 hover:bg-white/20 transition">
-              <h3 className="font-bold">Email</h3>
-              <p className="text-slate-200 mt-2">Zidanfahmiilmi@gmail.com</p>
+            <div className="glass-card p-6 rounded-xl shadow-lg hover:bg-white/20 transition">
+              <h3 className="font-bold text-lg md:text-xl">Email</h3>
+              <p className="text-slate-200 mt-2 text-sm md:text-base">
+                Zidanfahmiilmi@gmail.com
+              </p>
             </div>
 
             {/* WHATSAPP */}
-            <div className="glass-card p-6 hover:bg-white/20 transition">
-              <h3 className="font-bold">WhatsApp</h3>
-              <p className="text-slate-200 mt-2">WA.me/081220822693</p>
+            <div className="glass-card p-6 rounded-xl shadow-lg hover:bg-white/20 transition">
+              <h3 className="font-bold text-lg md:text-xl">WhatsApp</h3>
+              <p className="text-slate-200 mt-2 text-sm md:text-base">
+                WA.me/081220822693
+              </p>
             </div>
 
             {/* LOCATION */}
-            <div className="glass-card p-6 hover:bg-white/20 transition">
-              <h3 className="font-bold">
+            <div className="glass-card p-6 rounded-xl shadow-lg hover:bg-white/20 transition">
+              <h3 className="font-bold text-lg md:text-xl">
                 {language === "en" ? "Location" : "Lokasi"}
               </h3>
-              <p className="text-slate-200 mt-2">West Java - Indonesia</p>
+              <p className="text-slate-200 mt-2 text-sm md:text-base">
+                West Java - Indonesia
+              </p>
             </div>
           </div>
         </div>

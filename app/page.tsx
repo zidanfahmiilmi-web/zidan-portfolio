@@ -13,48 +13,36 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen text-white">
+    <main className="relative min-h-screen text-white overflow-x-hidden">
       {/* Background kosmik */}
       <CosmicBackground />
 
       {/* Navbar bergaya glass */}
       <Navbar />
 
-      {/* Bungkus setiap section dengan animasi scroll + glassmorphism */}
+      {/* Bungkus setiap section dengan animasi scroll */}
       <AnimatedSection>
-        <section className="glass-card p-8">
-          <Hero />
-        </section>
+        <Hero />
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="glass-card p-8">
-          <About />
-        </section>
+        <About />
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="glass-card p-8">
-          <Experience />
-        </section>
+        <Experience />
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="glass-card p-8">
-          <Skills />
-        </section>
+        <Skills />
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="glass-card p-8">
-          <Projects />
-        </section>
+        <Projects />
       </AnimatedSection>
 
       <AnimatedSection>
-        <section className="glass-card p-8">
-          <Contact />
-        </section>
+        <Contact />
       </AnimatedSection>
 
       {/* Footer bergaya glass */}

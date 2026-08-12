@@ -8,12 +8,12 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 px-6 bg-slate-900 text-white"
+      className="px-4 md:px-12 py-12 md:py-24 bg-slate-900 text-white"
     >
       <div className="max-w-5xl mx-auto">
         <h2
           className="
-            text-4xl font-bold mb-8
+            text-3xl md:text-5xl font-bold mb-8
             bg-linear-to-r from-blue-400 to-cyan-300
             bg-clip-text text-transparent
           "
@@ -21,7 +21,7 @@ export default function About() {
           {language === "en" ? "About Me" : "Tentang Saya"}
         </h2>
 
-        <div className="space-y-5 text-slate-300 leading-relaxed">
+        <div className="space-y-5 text-slate-300 leading-relaxed text-sm md:text-base">
           {language === "en" ? (
             <>
               <p>
